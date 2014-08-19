@@ -1,0 +1,6 @@
+*.swp
+*.swo
+lib
+lib64
+bin
+include
