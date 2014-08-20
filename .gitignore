@@ -1,6 +1,12 @@
+# Swap files
 *.swp
 *.swo
-lib
-lib64
-bin
-include
+
+
+# Virtualenv
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ss]cripts
