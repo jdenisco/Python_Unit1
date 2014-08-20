@@ -20,4 +20,3 @@ print "Hello World!"
 python_version = sys.version
 print "This program is running: " + python_version
 print "That's all. Goodbye!"
-
