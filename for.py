@@ -5,9 +5,9 @@
 #   file: for
 #   date: 2014-08-20
 #   author: jdenisco
-#   email: james.denisco@genesys.com
+#   email: jimd@jdenisco.com
 #
-# Copyright © 2014 jdenisco <james.denisco@genesys.com>
+# Copyright © 2014 jdenisco <jimd@jdenisco.com>
 #
 
 """

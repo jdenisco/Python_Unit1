@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # vim:fenc=utf-8
 #
-#   file: break
-#   date: 2014-08-20
+#   file: raw_input
+#   date: 2014-08-25
 #   author: jdenisco
 #   email: jimd@jdenisco.com
 #
@@ -14,11 +14,6 @@
 Description:
 """
 
-while True:
-    s = raw_input('Enter something : ')
-    if s == 'quit':
-        break
-    print 'Length of the string is', len(s)
-
-print 'Done'
+my_input = raw_input("Enter something, yo!")
+print my_input
 

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # vim:fenc=utf-8
 #
-#   file: else
+#   file: sysargv-example
 #   date: 2014-08-25
 #   author: jdenisco
 #   email: jimd@jdenisco.com
@@ -13,16 +13,12 @@
 """
 Description:
 """
-import sys
-file_name = sys.argv[1]
-text = []
-try:
-    fh = open(file_name, 'r')
-except IOError:
-    print 'cannot open', file_name
-else:
-    text = fh.readlines()
-    fh.close()
 
-if text:
-    print text[100]
+import sys
+
+print "The name of this script is {}".format(sys.argv[0])
+print "User supplied {} arguments at run time".format(len(sys.argv))
+
+for arg in sys.argv[1:]:
+  print arg
+
