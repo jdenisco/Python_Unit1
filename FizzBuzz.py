@@ -14,9 +14,15 @@
 Description:
 Thinkful Lesson 4 
     Fizz Buzz
+    V1
 """
 
 number = int(raw_input("Please enter a number for me to count to: "))
+
+if number > 100:
+    print('Please enter a value less then or equal to 100')
+    number = int(raw_input('Please re-enter number you would like to count to: '))
+    
 
 for i in range( 1, number+1):
     if i % 3 == 0:
