@@ -17,12 +17,17 @@ Thinkful Lesson 4
     V1
 """
 
-number = int(raw_input("Please enter a number for me to count to: "))
+import sys
+
+# Lets see if we can get number from command line.
+if len(sys.argv) > 1:
+    number = int(sys.argv[1])
+else:
+    number = int(raw_input("Please enter a number for me to count to: "))
 
 if number > 100:
     print('Please enter a value less then or equal to 100')
     number = int(raw_input('Please re-enter number you would like to count to: '))
-    
 
 for i in range( 1, number+1):
     if i % 3 == 0:
@@ -34,6 +39,3 @@ for i in range( 1, number+1):
         print("Buzz")
     else:
      print(i)
-    
-
-
