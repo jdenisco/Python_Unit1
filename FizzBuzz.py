@@ -2,38 +2,48 @@
 # -*- coding: utf-8 -*-
 # vim:fenc=utf-8
 #
-#   file: FizzBuzz
-#   date: 2014-08-30
+#   file: FizzBuzzRefactor
+#   date: 2014-09-02
 #   author: jdenisco
-#   email: james.denisco@genesys.com
+#   email: jimd@jdenisco.com
 #
-# Copyright © 2014 jdenisco <james.denisco@genesys.com>
+# Copyright © 2014 jdenisco <jimd@jdenisco.com>
 #
 
 """
 Description:
-Thinkful Lesson 4 
-    Fizz Buzz
-    V1
+FizzBuzz using functions
 """
 
-number = int(raw_input("Please enter a number for me to count to: "))
+import sys
 
-if number > 100:
-    print('Please enter a value less then or equal to 100')
-    number = int(raw_input('Please re-enter number you would like to count to: '))
-    
+def even(dividend, divisor):
+    """ Is dividend evenly divisible by divisor """
 
-for i in range( 1, number+1):
-    if i % 3 == 0:
-        if i % 5 == 0:
-            print("Fizz Buzz")
-        else:
-            print("Fizz")
-    elif i % 5 == 0:
-        print("Buzz")
+    if dividend % divisor == 0:
+        return True
     else:
-     print(i)
-    
+        return False
+
+def fizzbuzz(upperlimit=100):
+    """ Run FizzBizz up to upperlimit """
+    for i in range(1, upperlimit+1):
+        if even(i, 3) is True:
+            if even(i, 5) is True:
+                print('FizzBuzz')
+            else:
+                print('Fizz')
+        elif even(i, 5) is True:
+            print('Buzz')
+        else:
+            print(i)
+
+
+if __name__ == '__main__':
+    if len(sys.argv) > 1:
+        upperlimit = int(sys.argv[1])
+        fizzbuzz(upperlimit)
+    else:
+        fizzbuzz()
 
 
