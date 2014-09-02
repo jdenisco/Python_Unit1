@@ -18,6 +18,7 @@ Refactor
 
 import sys
 
+
 def even(dividend, divisor):
     """ Is dividend evenly divisible by divisor """
 
@@ -25,6 +26,7 @@ def even(dividend, divisor):
         return True
     else:
         return False
+
 
 def fizzbuzz(upperlimit=100):
     """ Run FizzBizz up to upperlimit """
