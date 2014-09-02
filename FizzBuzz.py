@@ -14,7 +14,7 @@
 Description:
 Thinkful Lesson 4 
     Fizz Buzz
-    V1
+    V2
 """
 
 import sys
@@ -25,11 +25,11 @@ if len(sys.argv) > 1:
 else:
     number = int(raw_input("Please enter a number for me to count to: "))
 
-if number > 100:
+while number >= 100 or not number > 0:
     print('Please enter a value less then or equal to 100')
     number = int(raw_input('Please re-enter number you would like to count to: '))
 
-for i in range( 1, number+1):
+for i in range(1, number+1):
     if i % 3 == 0:
         if i % 5 == 0:
             print("Fizz Buzz")
