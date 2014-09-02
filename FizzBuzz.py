@@ -13,6 +13,7 @@
 """
 Description:
 FizzBuzz using functions
+Refactor
 """
 
 import sys
@@ -45,5 +46,3 @@ if __name__ == '__main__':
         fizzbuzz(upperlimit)
     else:
         fizzbuzz()
-
-
