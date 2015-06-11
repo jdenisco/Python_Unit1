@@ -20,7 +20,7 @@ guess = int(raw_input('Enter an integer : '))
 if guess == number:
     # New block starts here
     print 'Congratulations you guessed it.'
-    print '(but you do not win any prizes!'
+    print '(but you do not win any prizes!)'
     # block ends
 elif guess < number:
     # another block
